@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
 		<style type="text/css">
 
 			/*初始化样式*/
@@ -15,7 +17,8 @@
 			address,cite,code,em,th {font-weight:normal; font-style:normal;}
 
 			/*自定义样式*/
-			.ketang-col{display: block;max-width: 1080px;margin-left: auto;margin-right: auto;}
+			.ketang-col{display: block;max-width: 1080px;margin-left: auto;margin-right: auto;border-bottom: 1px solid #e5e5e5;}
+
 			.nav{color: #999999;float: right;margin-left: 20px;margin-top: 10px;font-size: 20px;text-decoration:none;transition: all 0.125s linear 0s;}
 			.nav:hover{color: #6bc5d2;}
 
@@ -23,17 +26,19 @@
 			.logo{display: inline-block;margin-top: 0px;color: red;font-size: 30px;}
 			.top{padding-top: 20px;padding-bottom: 20px;}
 			.banner{background-color: #73cfd1;height: 500px;}
-			.nav2{font-size: 500px;color: #ffffff;float: left;margin-top: -30px;margin-right: 30px;margin-left: -20px;}
+			.nav2{font-size: 500px;color: #ffffff;float: left;margin-top: -30px;margin-right: 30px;margin-left: -140px;}
 			.h2{font-size: 50px;color: #ffffff;padding-top: 200px;}
 			.p2{font-size: 20px;padding-top: 20; margin-top: 10; margin-bottom: 40px;}
 			.ahref{font-size: 18px;color: #ffffff;border: 1px solid #ffffff;border-radius: 5px;padding: 10px 30px;text-decoration:none;transition: all 0.125s linear 0s;}
 			.ahref:hover{background: rgba(355,255,255,0.2);}
+
+			.dian{margin-left: auto;margin-right: auto;}
 			.container{width: 1080px;margin-right: auto;margin-left: auto;border-bottom: 1px solid #e5e5e5;}
 
 			.title{font-size: 30px;font-weight: normal;color: #f14e42;margin-bottom: 20px;}
 			.content{ccolor: #6f6f70;line-height: 25px;font-size: 15px;display: inline-block;text-align: left;}
 			.visiontitle{font-size: 30px;font-weight: normal;color: #f14e42;margin-bottom: 20px;padding-top: 200px;}
-			.visioncontent{color: #6f6f70;line-height: 25px;font-size: 15px;padding-right: 100px;padding-bottom: 200px;}
+			.visioncontent{color: #6f6f70;line-height: 25px;font-size: 15px;padding-right: 100px;padding-bottom: 150px;}
 
 			.contentblock{padding-bottom:30px; padding-top:70px;text-align: center;}
 
@@ -51,10 +56,15 @@
 			{
 				.nav2{display: none;}
 				.photo{display: none;}
-
-				.h2{text-align: center;padding-top: 150px;}
-				.p2{text-align: center;}
-				.ahref{text-align: center;}
+				.h2{padding-top: 150px;}
+				.top{padding-bottom: 20px;}
+				.ketang-col{text-align: center;}
+				.ketang-col-1{width: 100%;}
+				.ketang-col-2{width: 100%;}
+				.websitelink{display: none;}
+				.nav{float: none;margin-right: 20px;}
+				.nav-column{padding-top: 20px;}
+				.visioncontent{padding-right: 0;}
 
 			}
 
@@ -62,22 +72,27 @@
 	</head>
 	<body>
 		<!--这里是标题栏开始-->
-		<div class="ketang-col top">
-			<h1 class="logo">原型课堂</h1>
-			<span class="websitelink">ketang.im</span>
-			<a class="nav" href="#aboutus">关于我们</a>
-			<a class="nav" href="#vision">愿景</a>
-			<a class="nav" href="#crazyones">致狂想者</a>
+		<div class="top ketang-col">
+			<div class="ketang-col-1">
+				<h1 class="logo">原型课堂</h1>
+				<span class="websitelink">ketang.im</span>
+			</div>
+
+			<div class="ketang-col-2 nav-column">
+				<a class="nav" href="#aboutus">关于我们</a>
+				<a class="nav" href="#vision">愿景</a>
+				<a class="nav" href="#crazyones">致狂想者</a>
+			</div>
 		</div>
 		<!--这里是标题栏结束-->
 
 		<!--这里是广告栏开始-->
 		<div class="banner">
-			<div  style="border-bottom: 0;display: block;max-width: 1280px;margin-right: auto;margin-left: auto;">
+			<div  class="ketang-col" style="border-bottom: none;">
 				<span class="nav2">web</span>
 				<h2 class="h2">零基础网站教程</h2>
-				<p class="p2">车库创业, 勇敢的迈出第一步</p>
-				<a href="fullbook.cn" class="ahref">查看详情</a>
+				<p class="p2">车库创业, 勇敢迈出第一步</p>
+				<a class="ahref">查看详情</a>
 			</div>
 		</div>
 		<!--这里是广告栏结束-->
@@ -106,9 +121,7 @@
 			<img class="photo" src="./mac.png">
 			<h2 class="visiontitle">我们的愿景</h2>
 			<p class="visioncontent">
-			科技的发展赋予了每个人创造的可能，但科技发展的速度，远远超过了教育发展的速度。原型课堂就是应运而生。
-
-			目标导向，案例导向，基于用户理解为中心的教育内容。让每个人都可以通过简单的方式，学习技术，租用设备，计算能力和软件许可，来进行自己的创造。这正是云计算的愿景，而原型课堂的课程就是为了实现这样的愿景而不断向前。</p>
+			科技的发展赋予了每个人创造的可能，但科技发展的速度，远远超过了教育发展的速度。原型课堂就是应运而生。目标导向，案例导向，基于用户理解为中心的教育内容。让每个人都可以通过简单的方式，学习技术，租用设备，计算能力和软件许可，来进行自己的创造。这正是云计算的愿景，而原型课堂的课程就是为了实现这样的愿景而不断向前。</p>
 		</div>
 		<!--这里是图文混排栏结束-->
 
@@ -121,7 +134,7 @@
 
 		<!--这里是页脚开始-->
 		<div class="footer">
-			<span class="contentfooter ketang-col">ketang.im 2017 向狂想者致敬</span>
+			<span class="contentfooter ketang-col" style="border-bottom: none;">ketang.im 2017 向狂想者致敬</span>
 		</div>
 		<!--这里是页脚结束-->
 		
